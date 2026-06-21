@@ -1,230 +1,180 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rohit Sai Nagarjuna Reddy | Full Stack Engineer</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght=400;700&display=swap');
-        body {
-            font-family: 'Space Grotesk', sans-serif;
-            background-color: #FFFDEB;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rohit Sai Nagarjuna Reddy | Platform Engineer</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+body{font-family:'Space Grotesk',sans-serif;background:#FFF8E7;color:#111}
+.gridbg{position:fixed;inset:0;opacity:.08;pointer-events:none;background-image:linear-gradient(#111 1px,transparent 1px),linear-gradient(90deg,#111 1px,transparent 1px);background-size:40px 40px}
+.card{border:4px solid #111;box-shadow:8px 8px 0 #111;transition:.2s}
+.card:hover{transform:translate(-4px,-4px);box-shadow:14px 14px 0 #111}
+.tag{display:inline-block;background:#111;color:#fff;padding:.35rem .8rem;font-weight:900}
+.timeline{position:relative;padding-left:3rem}
+.timeline:before{content:'';position:absolute;left:12px;top:0;bottom:0;width:8px;background:#111}
+.node{position:absolute;left:-6px;top:22px;width:24px;height:24px;border:4px solid #111;background:#FFD84D}
+</style>
 </head>
-<body class="text-[#121212] antialiased p-4 md:p-8">
+<body>
+<div class="gridbg"></div>
 
-    <div class="max-w-6xl mx-auto space-y-12">
-        
-        <header class="bg-[#FF6B6B] border-4 border-[#121212] p-6 md:p-10 shadow-[8px_8px_0px_0px_#121212] flex flex-col md:flex-row items-center gap-8 justify-between">
-            <div class="space-y-4 max-w-2xl">
-                <h1 class="text-4xl md:text-6xl font-bold tracking-tight uppercase leading-none text-[#121212]">
-                    Rohit Sai Nagarjuna <br>Reddy Jonnala
-                </h1>
-                <p class="text-xl md:text-2xl font-bold bg-white inline-block px-3 py-1 border-2 border-[#121212] shadow-[3px_3px_0px_0px_#121212] text-[#121212]">
-                    Eng-III Full Stack Engineer
-                </p>
-                <div class="flex flex-wrap gap-3 pt-2 text-sm font-bold">
-                    <a href="mailto:rohit20001221@gmail.com" class="bg-[#4D96FF] text-[#121212] border-2 border-[#121212] px-3 py-1 hover:translate-x-1 hover:translate-y-1 hover:shadow-none transition-all shadow-[2px_2px_0px_0px_#121212]">Email</a>
-                    <a href="https://linkedin.com/in/rohit20001221/" target="_blank" class="bg-[#6BCB77] text-[#121212] border-2 border-[#121212] px-3 py-1 hover:translate-x-1 hover:translate-y-1 hover:shadow-none transition-all shadow-[2px_2px_0px_0px_#121212]">LinkedIn</a>
-                    <a href="https://github.com/rohit20001221" target="_blank" class="bg-[#9AC5F4] text-[#121212] border-2 border-[#121212] px-3 py-1 hover:translate-x-1 hover:translate-y-1 hover:shadow-none transition-all shadow-[2px_2px_0px_0px_#121212]">GitHub</a>
-                    <span class="bg-white border-2 border-[#121212] px-3 py-1 shadow-[2px_2px_0px_0px_#121212] text-[#121212]">+91 9515793306</span>
-                </div>
-                <p class="text-sm font-bold uppercase tracking-wider pt-2 text-[#121212]">📍 Hyderabad, Telangana, India</p>
-            </div>
-            
-            <div class="w-48 h-48 md:w-56 md:h-56 bg-[#FFE66D] border-4 border-[#121212] shadow-[6px_6px_0px_0px_#121212] flex-shrink-0 flex items-center justify-center relative group">
-                <img src="./profile.png" alt="Rohit Portrait" class="w-full h-full object-cover border-b-4 border-[#121212] absolute top-0 left-0" />
-            </div>
-        </header>
+<div class="max-w-7xl mx-auto p-6 md:p-10 space-y-16">
 
-        <section class="space-y-6">
-            <h2 class="text-3xl font-bold uppercase bg-[#6BCB77] text-[#121212] inline-block px-4 py-2 border-4 border-[#121212] shadow-[4px_4px_0px_0px_#121212]">
-                Technical Toolkit
-            </h2>
-            <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
-                
-                <div class="bg-white border-4 border-[#121212] p-5 shadow-[4px_4px_0px_0px_#121212] flex flex-col justify-between">
-                    <div>
-                        <div class="flex items-center gap-2 border-b-2 border-[#121212] pb-2 mb-4">
-                            <svg class="w-6 h-6 text-[#D63031]" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
-                                <line x1="8" y1="21" x2="16" y2="21"></line>
-                                <line x1="12" y1="17" x2="12" y2="21"></line>
-                            </svg>
-                            <h3 class="text-xl font-bold uppercase text-[#D63031]">Frontend</h3>
-                        </div>
-                        <div class="flex flex-wrap gap-2 text-xs font-bold">
-                            <span class="bg-[#FFFDEB] border-2 border-[#121212] px-2 py-1 shadow-[2px_2px_0px_0px_#121212]">React</span>
-                            <span class="bg-[#FFFDEB] border-2 border-[#121212] px-2 py-1 shadow-[2px_2px_0px_0px_#121212]">Next.js</span>
-                            <span class="bg-[#FFFDEB] border-2 border-[#121212] px-2 py-1 shadow-[2px_2px_0px_0px_#121212]">TypeScript</span>
-                            <span class="bg-[#FFFDEB] border-2 border-[#121212] px-2 py-1 shadow-[2px_2px_0px_0px_#121212]">JavaScript</span>
-                            <span class="bg-[#FFFDEB] border-2 border-[#121212] px-2 py-1 shadow-[2px_2px_0px_0px_#121212]">Micro Frontends</span>
-                            <span class="bg-[#FFFDEB] border-2 border-[#121212] px-2 py-1 shadow-[2px_2px_0px_0px_#121212]">Web Components</span>
-                            <span class="bg-[#FFFDEB] border-2 border-[#121212] px-2 py-1 shadow-[2px_2px_0px_0px_#121212]">TanStack Router</span>
-                            <span class="bg-[#FFFDEB] border-2 border-[#121212] px-2 py-1 shadow-[2px_2px_0px_0px_#121212]">Zustand</span>
-                            <span class="bg-[#FFFDEB] border-2 border-[#121212] px-2 py-1 shadow-[2px_2px_0px_0px_#121212]">React Query</span>
-                            <span class="bg-[#FFFDEB] border-2 border-[#121212] px-2 py-1 shadow-[2px_2px_0px_0px_#121212]">Material UI</span>
-                            <span class="bg-[#FFFDEB] border-2 border-[#121212] px-2 py-1 shadow-[2px_2px_0px_0px_#121212]">Styled Components</span>
-                            <span class="bg-[#FFFDEB] border-2 border-[#121212] px-2 py-1 shadow-[2px_2px_0px_0px_#121212]">Tailwind CSS</span>
-                            <span class="bg-[#FFFDEB] border-2 border-[#121212] px-2 py-1 shadow-[2px_2px_0px_0px_#121212]">ShadCN UI</span>
-                        </div>
-                    </div>
-                </div>
+<section class="card bg-[#FF5A5F] p-8 md:p-12 relative overflow-hidden">
+<div class="grid lg:grid-cols-[1.6fr_0.8fr] gap-10 items-center">
+<div>
+<div class="inline-block bg-white border-4 border-black px-4 py-2 font-black rotate-[-2deg]">CURRENTLY @ VERIZON</div>
+<h1 class="text-5xl md:text-8xl font-black leading-none mt-6 uppercase">Rohit Sai<br>Nagarjuna<br>Reddy</h1>
+<p class="text-2xl font-bold mt-6">Platform Builder • Full Stack Engineer • AI Systems Engineer</p>
+<p class="mt-5 text-lg max-w-2xl">Building enterprise platforms, AI systems, geospatial infrastructure and distributed backend services with React, Golang and cloud-native technologies.</p>
+</div>
 
-                <div class="bg-white border-4 border-[#121212] p-5 shadow-[4px_4px_0px_0px_#121212] flex flex-col justify-between">
-                    <div>
-                        <div class="flex items-center gap-2 border-b-2 border-[#121212] pb-2 mb-4">
-                            <svg class="w-6 h-6 text-[#0984E3]" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
-                                <path d="M3 5v6c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
-                                <path d="M3 11v6c0 1.66 4 3 9 3s9-1.34 9-3v-6"></path>
-                            </svg>
-                            <h3 class="text-xl font-bold uppercase text-[#0984E3]">Backend & DBs</h3>
-                        </div>
-                        <div class="flex flex-wrap gap-2 text-xs font-bold">
-                            <span class="bg-[#FFFDEB] border-2 border-[#121212] px-2 py-1 shadow-[2px_2px_0px_0px_#121212]">Golang</span>
-                            <span class="bg-[#FFFDEB] border-2 border-[#121212] px-2 py-1 shadow-[2px_2px_0px_0px_#121212]">Java</span>
-                            <span class="bg-[#FFFDEB] border-2 border-[#121212] px-2 py-1 shadow-[2px_2px_0px_0px_#121212]">Spring Boot</span>
-                            <span class="bg-[#FFFDEB] border-2 border-[#121212] px-2 py-1 shadow-[2px_2px_0px_0px_#121212]">NestJS</span>
-                            <span class="bg-[#FFFDEB] border-2 border-[#121212] px-2 py-1 shadow-[2px_2px_0px_0px_#121212]">Django / DRF</span>
-                            <span class="bg-[#FFFDEB] border-2 border-[#121212] px-2 py-1 shadow-[2px_2px_0px_0px_#121212]">FastAPI</span>
-                            <span class="bg-[#FFFDEB] border-2 border-[#121212] px-2 py-1 shadow-[2px_2px_0px_0px_#121212]">Node.js</span>
-                            <span class="bg-[#FFFDEB] border-2 border-[#121212] px-2 py-1 shadow-[2px_2px_0px_0px_#121212]">PostgreSQL</span>
-                            <span class="bg-[#FFFDEB] border-2 border-[#121212] px-2 py-1 shadow-[2px_2px_0px_0px_#121212]">MySQL</span>
-                            <span class="bg-[#FFFDEB] border-2 border-[#121212] px-2 py-1 shadow-[2px_2px_0px_0px_#121212]">Oracle</span>
-                            <span class="bg-[#FFFDEB] border-2 border-[#121212] px-2 py-1 shadow-[2px_2px_0px_0px_#121212]">Redis</span>
-                            <span class="bg-[#FFFDEB] border-2 border-[#121212] px-2 py-1 shadow-[2px_2px_0px_0px_#121212]">Firestore</span>
-                            <span class="bg-[#FFFDEB] border-2 border-[#121212] px-2 py-1 shadow-[2px_2px_0px_0px_#121212]">ClickHouse</span>
-                            <span class="bg-[#FFFDEB] border-2 border-[#121212] px-2 py-1 shadow-[2px_2px_0px_0px_#121212]">DuckDB</span>
-                            <span class="bg-[#FFFDEB] border-2 border-[#121212] px-2 py-1 shadow-[2px_2px_0px_0px_#121212]">OpenSearch</span>
-                        </div>
-                    </div>
-                </div>
+<div>
+<div class="card bg-white p-3 rotate-[-2deg]">
+<img src="./profile.png" alt="Profile" class="w-full aspect-square object-cover border-4 border-black">
+</div>
+</div>
+</div>
+</section>
 
-                <div class="bg-white border-4 border-[#121212] p-5 shadow-[4px_4px_0px_0px_#121212] flex flex-col justify-between">
-                    <div>
-                        <div class="flex items-center gap-2 border-b-2 border-[#121212] pb-2 mb-4">
-                            <svg class="w-6 h-6 text-[#E1B12C]" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                <rect x="4" y="4" width="6" height="6" rx="1"></rect>
-                                <rect x="14" y="4" width="6" height="6" rx="1"></rect>
-                                <rect x="4" y="14" width="6" height="6" rx="1"></rect>
-                                <rect x="14" y="14" width="6" height="6" rx="1"></rect>
-                                <path d="M10 7h4M7 10v4M17 10v4M10 17h4"></path>
-                            </svg>
-                            <h3 class="text-xl font-bold uppercase text-[#E1B12C]">DevOps, Data & AI</h3>
-                        </div>
-                        <div class="flex flex-wrap gap-2 text-xs font-bold">
-                            <span class="bg-[#FFFDEB] border-2 border-[#121212] px-2 py-1 shadow-[2px_2px_0px_0px_#121212]">AWS Lambda</span>
-                            <span class="bg-[#FFFDEB] border-2 border-[#121212] px-2 py-1 shadow-[2px_2px_0px_0px_#121212]">EKS / K8s</span>
-                            <span class="bg-[#FFFDEB] border-2 border-[#121212] px-2 py-1 shadow-[2px_2px_0px_0px_#121212]">Helm</span>
-                            <span class="bg-[#FFFDEB] border-2 border-[#121212] px-2 py-1 shadow-[2px_2px_0px_0px_#121212]">Jenkins</span>
-                            <span class="bg-[#FFFDEB] border-2 border-[#121212] px-2 py-1 shadow-[2px_2px_0px_0px_#121212]">Docker</span>
-                            <span class="bg-[#FFFDEB] border-2 border-[#121212] px-2 py-1 shadow-[2px_2px_0px_0px_#121212]">Nginx</span>
-                            <span class="bg-[#FFFDEB] border-2 border-[#121212] px-2 py-1 shadow-[2px_2px_0px_0px_#121212]">GraphQL / tRPC</span>
-                            <span class="bg-[#FFFDEB] border-2 border-[#121212] px-2 py-1 shadow-[2px_2px_0px_0px_#121212]">ETL Pipelines</span>
-                            <span class="bg-[#FFFDEB] border-2 border-[#121212] px-2 py-1 shadow-[2px_2px_0px_0px_#121212]">LangChain</span>
-                            <span class="bg-[#FFFDEB] border-2 border-[#121212] px-2 py-1 shadow-[2px_2px_0px_0px_#121212]">LangGraph</span>
-                            <span class="bg-[#FFFDEB] border-2 border-[#121212] px-2 py-1 shadow-[2px_2px_0px_0px_#121212]">RAG Frameworks</span>
-                            <span class="bg-[#FFFDEB] border-2 border-[#121212] px-2 py-1 shadow-[2px_2px_0px_0px_#121212]">Vector Databases</span>
-                            <span class="bg-[#FFFDEB] border-2 border-[#121212] px-2 py-1 shadow-[2px_2px_0px_0px_#121212]">XGBoost / KNN</span>
-                        </div>
-                    </div>
-                </div>
-                
-            </div>
-        </section>
+<section>
+<div class="tag">WHAT I BUILD</div>
+<div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mt-6">
+<div class="card bg-yellow-300 p-6"><h3 class="font-black text-2xl">Frontend Architecture</h3><p class="mt-3">React, Next.js, TypeScript, Micro Frontends and Design Systems.</p></div>
+<div class="card bg-blue-300 p-6"><h3 class="font-black text-2xl">Backend Systems</h3><p class="mt-3">Golang, Java, Spring Boot, GraphQL and Distributed Services.</p></div>
+<div class="card bg-green-300 p-6"><h3 class="font-black text-2xl">Data Platforms</h3><p class="mt-3">PostgreSQL, OpenSearch, ClickHouse, Redis and ETL Pipelines.</p></div>
+<div class="card bg-pink-300 p-6"><h3 class="font-black text-2xl">AI Engineering</h3><p class="mt-3">LangGraph, LangChain, RAG, MCP and Agent Workflows.</p></div>
+</div>
+</section>
 
-        <section class="space-y-6">
-            <h2 class="text-3xl font-bold uppercase bg-[#4D96FF] text-[#121212] inline-block px-4 py-2 border-4 border-[#121212] shadow-[4px_4px_0px_0px_#121212]">
-                Experience Timeline
-            </h2>
-            
-            <div class="space-y-8">
-                <div class="bg-white border-4 border-[#121212] p-6 md:p-8 shadow-[6px_6px_0px_0px_#121212] relative">
-                    <span class="absolute top-4 right-4 bg-[#121212] text-white px-3 py-1 font-bold text-xs uppercase tracking-widest">Sep 2023 - Present</span>
-                    <h3 class="text-2xl font-bold uppercase text-[#121212]">Verizon</h3>
-                    <p class="text-lg font-bold text-[#D63031] mb-4">Eng-III Full Stack Engineer</p>
-                    <ul class="list-none space-y-3 font-bold text-sm text-[#121212]">
-                        <li class="border-l-4 border-[#121212] pl-3"><strong class="text-[#0984E3]">Architectural Modernization:</strong> Led architecture and modernization initiatives including Angular-to-React, JSP, Oracle-to-PostgreSQL, and cloud-native platform development.</li>
-                        <li class="border-l-4 border-[#121212] pl-3"><strong class="text-[#0984E3]">High-Performance ETL:</strong> Rebuilt core Java enterprise components into Go, drastically slashing processing times by over 90% for massive real-time datasets.</li>
-                        <li class="border-l-4 border-[#121212] pl-3"><strong class="text-[#0984E3]">Geospatial & Core UI:</strong> Designed custom micro frontend structures, configurable UI frameworks, and high-performance vector tile servers mapping org-wide spatial layers.</li>
-                        <li class="border-l-4 border-[#121212] pl-3"><strong class="text-[#0984E3]">Security & Agents:</strong> Engineered LLM workflows utilizing LangChain/LangGraph for automated vulnerability containment; ensured 95% total framework testing coverage.</li>
-                    </ul>
-                </div>
+<section>
+<div class="tag">CAREER TIMELINE</div>
 
-                <div class="bg-white border-4 border-[#121212] p-6 md:p-8 shadow-[6px_6px_0px_0px_#121212] relative">
-                    <span class="absolute top-4 right-4 bg-[#121212] text-white px-3 py-1 font-bold text-xs uppercase tracking-widest">Jun 2022 - Sep 2023</span>
-                    <h3 class="text-2xl font-bold uppercase text-[#121212]">Curostrides</h3>
-                    <p class="text-lg font-bold text-[#26DE81] mb-4">Full Stack Engineer</p>
-                    <ul class="list-none space-y-3 font-bold text-sm text-[#121212]">
-                        <li class="border-l-4 border-[#121212] pl-3"><strong class="text-[#26DE81]">Healthcare Architectures:</strong> Programmed cross-functional records engines, appointment workflows, and transaction structures using Next.js, React Native, and GraphQL.</li>
-                        <li class="border-l-4 border-[#121212] pl-3"><strong class="text-[#26DE81]">Smart Processing:</strong> Integrated medical discovery matrices powered by Redis Vector Search combined with KNN algorithms.</li>
-                        <li class="border-l-4 border-[#121212] pl-3"><strong class="text-[#26DE81]">Mobile Profiling:</strong> Fixed major React Native presentation bottlenecks, raising application UI performance profiles safely from 20 FPS up to a smooth 55 FPS framework standard.</li>
-                    </ul>
-                </div>
+<div class="timeline mt-8 space-y-8">
 
-                <div class="bg-white border-4 border-[#121212] p-6 md:p-8 shadow-[6px_6px_0px_0px_#121212] relative">
-                    <span class="absolute top-4 right-4 bg-[#121212] text-white px-3 py-1 font-bold text-xs uppercase tracking-widest">Prior Experience</span>
-                    <h3 class="text-2xl font-bold uppercase text-[#121212]">Tapart</h3>
-                    <p class="text-lg font-bold text-[#0984E3] mb-4">Software Developer</p>
-                    <ul class="list-none space-y-3 font-bold text-sm text-[#121212]">
-                        <li class="border-l-4 border-[#121212] pl-3"><strong class="text-[#0984E3]">E-Commerce Pipelines:</strong> Built customized inventory platforms linked with Shopify; migrated raw Jinja/Bootstrap backends to decoupled DRF/Next.js systems.</li>
-                        <li class="border-l-4 border-[#121212] pl-3"><strong class="text-[#0984E3]">Stripe Infrastructure:</strong> Launched direct web-art marketplaces processing client purchases through customized payment webhooks.</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
+<div class="relative">
+<div class="node"></div>
+<div class="card bg-white p-6">
+<h2 class="text-3xl font-black">Verizon • Eng III</h2>
+<p class="font-bold mt-2">2023 - Present</p>
+<p class="mt-4">Platform Engineering, Enterprise Modernization, Geospatial Infrastructure and AI Systems.</p>
 
-        <section class="space-y-6">
-            <h2 class="text-3xl font-bold uppercase bg-[#FFE66D] text-[#121212] inline-block px-4 py-2 border-4 border-[#121212] shadow-[4px_4px_0px_0px_#121212]">
-                Open Source & Engineering Builds
-            </h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div class="bg-white border-4 border-[#121212] p-6 shadow-[4px_4px_0px_0px_#121212] flex flex-col justify-between">
-                    <div>
-                        <h3 class="text-xl font-bold uppercase mb-2 text-[#121212]">ripple</h3>
-                        <p class="text-sm font-bold text-[#2C3E50] leading-relaxed mb-4">A minimal BitTorrent client written in Go that demonstrates core peer-to-peer file sharing concepts like handshake protocols, piece exchange, and dataset integrity verification.</p>
-                    </div>
-                    <span class="text-xs font-bold uppercase tracking-wider text-[#D63031]">Golang / P2P Networks / BitTorrent</span>
-                </div>
-                <div class="bg-white border-4 border-[#121212] p-6 shadow-[4px_4px_0px_0px_#121212] flex flex-col justify-between">
-                    <div>
-                        <h3 class="text-xl font-bold uppercase mb-2 text-[#121212]">Agency.OS</h3>
-                        <p class="text-sm font-bold text-[#2C3E50] leading-relaxed mb-4">AI-centric marketing orchestration engine routing autonomous pipelines via LangChain, RAG configurations, Model Context Protocol (MCP) tooling, and dynamic browser integrations.</p>
-                    </div>
-                    <span class="text-xs font-bold uppercase tracking-wider text-[#D63031]">Python / LLMs / Agentic</span>
-                </div>
-                <div class="bg-white border-4 border-[#121212] p-6 shadow-[4px_4px_0px_0px_#121212] flex flex-col justify-between">
-                    <div>
-                        <h3 class="text-xl font-bold uppercase mb-2 text-[#121212]">Rabbit Template</h3>
-                        <p class="text-sm font-bold text-[#2C3E50] leading-relaxed mb-4">A high-security, ultra-fast Go template wrapper translating logical parameters securely into parameterized SQL blocks to defeat vector injection threats natively.</p>
-                    </div>
-                    <span class="text-xs font-bold uppercase tracking-wider text-[#0984E3]">Golang / Data Security</span>
-                </div>
-                <div class="bg-white border-4 border-[#121212] p-6 shadow-[4px_4px_0px_0px_#121212] flex flex-col justify-between">
-                    <div>
-                        <h3 class="text-xl font-bold uppercase mb-2 text-[#121212]">GoTiles</h3>
-                        <p class="text-sm font-bold text-[#2C3E50] leading-relaxed mb-4">Highly parallel vector rendering engine built with Go, generating instant Mapbox Vector Tiles (MVT) straight from spatial DB backends backed by Redis caching layers.</p>
-                    </div>
-                    <span class="text-xs font-bold uppercase tracking-wider text-[#26DE81]">Golang / Geospatial</span>
-                </div>
-            </div>
-        </section>
+<div class="grid lg:grid-cols-2 gap-6 mt-8">
 
-        <footer class="border-t-4 border-[#121212] pt-8 flex flex-col md:flex-row justify-between items-start md:items-center gap-4 text-sm font-bold uppercase tracking-wide text-[#121212]">
-            <div>
-                <p class="text-[#2C3E50]">Graduated June 2022</p>
-                <p class="text-base text-[#121212]">B.Tech in Computer Science & Engineering</p>
-                <p class="text-xs text-[#57606F]">Jawaharlal Nehru Technological University, Hyderabad</p>
-            </div>
-            <p class="bg-[#121212] text-white px-3 py-2 self-stretch md:self-auto text-center">
-                © 2026 Rohit Sai Nagarjuna Reddy
-            </p>
-        </footer>
+<div class="card bg-yellow-300 p-6">
+<h3 class="text-2xl font-black">Single Order Manager</h3>
+<p class="mt-3"><strong>Problem:</strong> Legacy order discovery workflows were fragmented across multiple systems.</p>
+<p class="mt-3"><strong>Architecture:</strong> React + Go services + OpenSearch indexing platform.</p>
+<p class="mt-3"><strong>Key Contributions:</strong></p>
+<ul class="list-disc ml-6">
+<li>Led Angular → React migration</li>
+<li>Built config-driven search experience</li>
+<li>Developed reusable Web Components</li>
+<li>Integrated Micro Frontends</li>
+</ul>
+</div>
 
-    </div>
+<div class="card bg-blue-300 p-6">
+<h3 class="text-2xl font-black">Converged UI</h3>
+<p class="mt-3"><strong>Problem:</strong> Multiple network applications lacked a unified user experience.</p>
+<p class="mt-3"><strong>Architecture:</strong> React + GraphQL + NestJS + Micro Frontends.</p>
+<p class="mt-3"><strong>Key Contributions:</strong></p>
+<ul class="list-disc ml-6">
+<li>Shared routing architecture</li>
+<li>Centralized state management</li>
+<li>Role-based access control</li>
+<li>Legacy application onboarding</li>
+</ul>
+</div>
 
+<div class="card bg-green-300 p-6">
+<h3 class="text-2xl font-black">Atlas</h3>
+<p class="mt-3"><strong>Problem:</strong> Geospatial datasets were difficult to discover and visualize.</p>
+<p class="mt-3"><strong>Architecture:</strong> Go + PostGIS + MapLibre + tRPC.</p>
+<p class="mt-3"><strong>Key Contributions:</strong></p>
+<ul class="list-disc ml-6">
+<li>Vector tile generation engine</li>
+<li>Headless mapping component library</li>
+<li>Geospatial catalog platform</li>
+<li>Monorepo architecture</li>
+</ul>
+</div>
+
+<div class="card bg-pink-300 p-6">
+<h3 class="text-2xl font-black">NS Security Agent</h3>
+<p class="mt-3"><strong>Problem:</strong> Security remediation workflows were manual and repetitive.</p>
+<p class="mt-3"><strong>Architecture:</strong> LangGraph + LangChain + Agent Workflows.</p>
+<p class="mt-3"><strong>Key Contributions:</strong></p>
+<ul class="list-disc ml-6">
+<li>Automated vulnerability analysis</li>
+<li>AI-driven remediation planning</li>
+<li>Pull request generation workflows</li>
+</ul>
+</div>
+
+</div>
+</div>
+</div>
+
+<div class="relative">
+<div class="node" style="background:#4F8EF7"></div>
+<div class="card bg-white p-6">
+<h2 class="text-3xl font-black">Curostrides</h2>
+<p class="font-bold mt-2">2022 - 2023</p>
+<p class="mt-4">Healthcare technology platform focused on patient engagement and recommendations.</p>
+
+<div class="mt-6 card bg-yellow-300 p-6">
+<h3 class="text-2xl font-black">Healthcare Platform</h3>
+<ul class="list-disc ml-6 mt-3">
+<li>Recommendation engine development</li>
+<li>React Native optimization</li>
+<li>Storybook component system</li>
+<li>Appointment and care management workflows</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div class="relative">
+<div class="node" style="background:#2ECF73"></div>
+<div class="card bg-white p-6">
+<h2 class="text-3xl font-black">Tapart</h2>
+<p class="mt-4">Inventory management, Shopify integrations and digital commerce systems.</p>
+</div>
+</div>
+
+</div>
+</section>
+
+<section>
+<div class="tag">TECHNOLOGY WALL</div>
+<div class="grid md:grid-cols-3 gap-6 mt-6">
+<div class="card bg-white p-6"><h3 class="font-black">Frontend</h3><p>React, Next.js, TypeScript, Zustand, React Query, Web Components.</p></div>
+<div class="card bg-white p-6"><h3 class="font-black">Backend</h3><p>Go, Java, Spring Boot, NestJS, GraphQL, FastAPI.</p></div>
+<div class="card bg-white p-6"><h3 class="font-black">Data</h3><p>PostgreSQL, Oracle, MySQL, Redis, OpenSearch, ClickHouse.</p></div>
+<div class="card bg-white p-6"><h3 class="font-black">AI</h3><p>LangGraph, LangChain, RAG, MCP, Vector Databases.</p></div>
+<div class="card bg-white p-6"><h3 class="font-black">Cloud</h3><p>AWS, Kubernetes, Helm, Docker, Jenkins.</p></div>
+<div class="card bg-white p-6"><h3 class="font-black">Quality</h3><p>Jest, Vitest, Cypress, SonarQube, Fortify.</p></div>
+</div>
+</section>
+
+<section>
+<div class="tag">OPEN SOURCE</div>
+<div class="grid md:grid-cols-2 gap-6 mt-6">
+<div class="card bg-yellow-300 p-6"><h3 class="font-black text-2xl">Agency.OS</h3><p>AI-powered marketing orchestration platform.</p></div>
+<div class="card bg-blue-300 p-6"><h3 class="font-black text-2xl">GoTiles</h3><p>Vector tile generation engine.</p></div>
+<div class="card bg-green-300 p-6"><h3 class="font-black text-2xl">Rabbit Template</h3><p>Security-first SQL templating framework.</p></div>
+<div class="card bg-pink-300 p-6"><h3 class="font-black text-2xl">Ripple</h3><p>BitTorrent client written in Go.</p></div>
+</div>
+</section>
+
+<section class="card bg-black text-white p-10">
+<h2 class="text-5xl font-black uppercase">I Build Platforms, Not Features.</h2>
+<p class="mt-4 text-xl">My focus is creating systems that scale across teams, domains and complex enterprise workflows.</p>
+</section>
+
+</div>
 </body>
 </html>
